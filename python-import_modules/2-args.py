@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
-
+if __name__ == "__main__":
+    exit()
 number_element = len(sys.argv) - 1
 
 if number_element == 0:
