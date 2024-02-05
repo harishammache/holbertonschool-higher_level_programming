@@ -3,6 +3,10 @@
 
 
 class Square:
-    """Empty class Square."""
+    """Class Square with a size attribute."""
     def __init__(self, size):
+        """
+            Initialize a new instance of the Square class.
+            size (int): The size of the square.
+        """
         self._Square_size = size
