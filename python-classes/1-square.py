@@ -5,4 +5,5 @@
 class Square:
     """Empty class Square."""
     def __init__(self, size):
-        pass
+        self._Square_size = size
+h = Square(3)
