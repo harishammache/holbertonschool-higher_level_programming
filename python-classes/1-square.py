@@ -9,4 +9,4 @@ class Square:
             Initialize a new instance of the Square class.
             size (int): The size of the square.
         """
-        self._Square_size = size
+        self.__size = size
