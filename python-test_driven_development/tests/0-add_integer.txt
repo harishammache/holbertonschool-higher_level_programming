@@ -22,14 +22,27 @@ Test case where both inputs are floats
 Test case where one input is a negative integer
 >>> add_integer(-3, 5)
 2
+>>> add_integer(5, -3)
+2
 
 Test case where both inputs are negative
 >>> add_integer(-3, -5)
 -8
 
+Test case with one float and one negative
+>>> add_integer(100.3, -2)
+98
+>>> add_integer(-2, 100.3)
+98
+
 Test case where one input is zero
 >>> add_integer(0, 5)
 5
+
+Test case with 3 arguments
+>>> add_integer(1, 2, 3)
+Traceback (most recent call last):
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 
 Test case where a is not an integer
 >>> add_integer('a', 5)
@@ -50,5 +63,14 @@ Test case when we don't have a
 >>> add_integer()
 Traceback (most recent call last):
 TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Test case with None
+>>> add_integer(None, 3)
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(3, None)
+Traceback (most recent call last):
+TypeError: b must be an integer
+
 
 
