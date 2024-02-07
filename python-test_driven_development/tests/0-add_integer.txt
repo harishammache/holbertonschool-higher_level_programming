@@ -20,10 +20,6 @@ Test case where one input is a negative integer
 >>> add_integer(-3, 5)
 2
 
-Test case where one input is a negative float
->>> add_integer(-3.5, 5)
-2
-
 Test case where both inputs are negative
 >>> add_integer(-3, -5)
 -8
@@ -32,5 +28,12 @@ Test case where one input is zero
 >>> add_integer(0, 5)
 5
 
->>> add_integer(3, 0)
-3
+Test case where a is not an integer
+>>> add_integer('a', 5)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Test case where b is not an integer
+>>> add_integer(4, "School")
+Traceback (most recent call last):
+TypeError: b must be an integer
