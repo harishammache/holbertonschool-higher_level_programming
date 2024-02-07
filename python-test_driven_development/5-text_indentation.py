@@ -8,13 +8,14 @@
 
 def text_indentation(text):
     """
-        prints a text with 2 new lines after each of these characters: ., ? and :
+        prints a text with 2 new lines after each of
+        these characters: ., ? and :
     """
     if type(text) is not str:
         raise TypeError("text must be a string")
-    my_list = [".","?",":"]
+    my_list = [".", "?", ":"]
     for index in text:
         if index in my_list:
-            print(index +"\n\n", end="")
+            print(index + "\n\n", end="")
         else:
             print(f"{index}", end="")
