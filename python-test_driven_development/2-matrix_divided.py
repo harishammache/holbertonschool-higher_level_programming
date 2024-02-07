@@ -4,6 +4,8 @@
     two arguments: matrix and div
     return: new matrix
 """
+
+
 def matrix_divided(matrix, div):
     """
         divides all elements of a matrix
