@@ -1,5 +1,13 @@
 #!/usr/bin/python3
+"""
+    divides all elements of a matrix
+    two arguments: matrix and div
+    return: new matrix
+"""
 def matrix_divided(matrix, div):
+    """
+        divides all elements of a matrix
+    """
     result_matrix = []
     if div == 0:
         raise ZeroDivisionError("division by zero")
