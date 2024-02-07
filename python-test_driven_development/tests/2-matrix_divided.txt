@@ -1,4 +1,4 @@
-# 2-matrix_divided.txt
+# 2-matrix_divided.py
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 """ divides all elements of a matrix """
