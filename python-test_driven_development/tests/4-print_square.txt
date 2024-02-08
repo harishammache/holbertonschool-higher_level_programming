@@ -24,3 +24,13 @@ Test where size is a float and a negativ integer
 >>> print_square(-2.5)
 Traceback (most recent call last):
 TypeError: size must be an integer
+
+Test with the None argument:
+>>> print_square(None)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+Test with no size argument:
+>>> print_square()
+Traceback (most recent call last):
+TypeError: print_square() missing 1 required positional argument: 'size'
