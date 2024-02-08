@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Define an empty class"""
+""" return an area rectangle"""
 
 
 class Rectangle:
-    """Empty class rectangle"""
+    """Define a class"""
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
