@@ -38,3 +38,8 @@ Test case where all element of the lists is integers or floats
 >>> matrix_divided([[1, 2, 3], [4, 5, 'e']], 2)
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test case with None
+>>> matrix_divided(None)
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
