@@ -11,9 +11,7 @@ max_integer = __import__('6-max_integer').max_integer
 
 
 class TestMaxInteger(unittest.TestCase):
-    """
-        test for know who is the max
-    """
+   
     def all_Integer(self):
         """Test with a list of integers"""
         list = [1, 2, 3, 4, 5]
@@ -43,5 +41,5 @@ class TestMaxInteger(unittest.TestCase):
         list = ["a", "b", 1]
         self.assertRaises(TypeError, max_integer)
 
-    if __name__ == '__main__':
-        unittest.main()
+if __name__ == '__main__':
+    unittest.main()
