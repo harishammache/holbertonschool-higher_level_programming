@@ -32,7 +32,7 @@ class TestMaxInteger(unittest.TestCase):
         result = max_integer(list)
         self.assertEqual(result, None)
 
-    def testfloat_integer(self):
+    def test_float_integer(self):
         """Test with float"""
         list = [1.2, 5.2, 8.9]
         result = max_integer(list)
