@@ -74,8 +74,8 @@ class Rectangle:
         if Area_rect_1 >= Area_rect_2:
             return rect_1
         else:
-              return rect_2
-    
+            return rect_2
+
     @classmethod
     def square(cls, size=0):
         new_rectangle = cls(size, size)
