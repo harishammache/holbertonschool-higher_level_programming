@@ -7,6 +7,15 @@ Test where name is a string
 Traceback (most recent call last):
 TypeError: name must be an integer
 
+Test where positif integer
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+
+Test where negativ integer
+>>> bg.integer_validator("number", -12)
+Traceback (most recent call last):
+ValueError: number must be greater than 0
+
 Test where age is egal zero
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("age", 0)
@@ -30,3 +39,15 @@ Test with 0 argument
 >>> bg.integer_validator()
 Traceback (most recent call last):
 TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Test with 3 arguments
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("numbers", 0, 1)
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+with infinite integer
+
+>>> bg.integer_validator("infnumber", int('inf'))
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'inf'
