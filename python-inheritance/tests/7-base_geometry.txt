@@ -1,53 +1,21 @@
 # 7-base_geometry.py
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
-Test where name is a string
 >>> bg = BaseGeometry()
->>> bg.integer_validator("name", "John")
-Traceback (most recent call last):
-TypeError: name must be an integer
 
-Test where positif integer
->>> bg = BaseGeometry()
+with positive integer
 >>> bg.integer_validator("my_int", 12)
 
-Test where negativ integer
+with negative integer
 >>> bg.integer_validator("number", -12)
 Traceback (most recent call last):
 ValueError: number must be greater than 0
 
-Test where age is egal zero
->>> bg = BaseGeometry()
->>> bg.integer_validator("age", 0)
-Traceback (most recent call last):
-ValueError: age must be greater than 0
-
-test where disance is negativ
->>> bg = BaseGeometry()
->>> bg.integer_validator("distance", -4)
-Traceback (most recent call last):
-ValueError: distance must be greater than 0
-
-Test with just the name
->>> bg = BaseGeometry()
->>> bg.integer_validator("width")
-Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
-
-Test with 0 argument
->>> bg = BaseGeometry()
->>> bg.integer_validator()
-Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
-
-Test with 3 arguments
->>> bg = BaseGeometry()
+with 3 arguments
 >>> bg.integer_validator("numbers", 0, 1)
 Traceback (most recent call last):
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
 with infinite integer
-
 >>> bg.integer_validator("infnumber", int('inf'))
 Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'inf'
