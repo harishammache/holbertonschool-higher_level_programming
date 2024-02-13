@@ -4,6 +4,7 @@
 
 with positive integer
 >>> bg.integer_validator("my_int", 12)
+>>>
 
 with negative integer
 >>> bg.integer_validator("number", -12)
