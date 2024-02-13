@@ -16,7 +16,7 @@ with a float
 with infinite integer
 >>> bg.integer_validator("infnumber", float('inf'))
 Traceback (most recent call last):
-ValueError: invalid literal for float() with base 10: 'inf'
+TypeError: infnumber must be an integer
 
 with 1 arguments
 >>> bg.integer_validator("numbers")
