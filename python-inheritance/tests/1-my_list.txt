@@ -1,0 +1,32 @@
+# 1-my_list.py
+>>> MyList = __import__('1-my_list').MyList
+
+"""Write a class MyList that inherits from list
+
+Test case where it is a list an integer
+>>> MyList.print_sorted([9, 2, 6, 4])
+[2, 4, 6, 9]
+
+Test case where list is empty
+>>> MyList.print_sorted()
+TypeError: MyList.print_sorted() missing 1 required positional argument: 'self'
+
+Test case where 1 letter in the list
+>>> MyList.print_sorted([9, "e", 1, 2, 3])
+TypeError: '<' not supported between instances of 'str' and 'int'
+
+Test case with None
+>>> MyList.print_sorted(None)
+TypeError: 'NoneType' object is not iterable
+
+Test with lot of arguments
+>>> MyList.print_sorted(1, 3, 5)
+TypeError: MyList.print_sorted() takes 1 positional argument but 3 were given
+
+Test with 2 list
+>>> MyList.print_sorted([1, 2, 3], [1, 3, 4])
+TypeError: MyList.print_sorted() takes 1 positional argument but 2 were given
+
+Test with 2 list successiv
+>>> MyList.print_sorted([1, 2, 3][1, 3, 4])
+TypeError: list indices must be integers or slices, not tuple
