@@ -19,3 +19,13 @@ with infinite integer
 >>> bg.integer_validator("infnumber", int('inf'))
 Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'inf'
+
+with 1 arguments
+>>> bg.integer_validator("numbers")
+Traceback (most recent call last):
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+with no arguments
+>>> bg.integer_validator()
+Traceback (most recent call last):
+TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
