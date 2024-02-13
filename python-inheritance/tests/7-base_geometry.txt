@@ -42,4 +42,3 @@ Test verify if the function accept the number than an integer
 Test verify if the function accept the number than an integer positif
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("width", 12)
-
