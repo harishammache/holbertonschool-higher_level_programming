@@ -23,10 +23,23 @@ test where age is greater than 0
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("age", 20)
 
+
 test where name is an integer
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("name", 3)
 
+
 test where distance is positiv number
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("age", 30)
+
+
+Test verify if the function accept the number than an integer 
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+
+
+Test verify if the function accept the number than an integer positif
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("width", 12)
+
