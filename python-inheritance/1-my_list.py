@@ -6,8 +6,6 @@
 
 class MyList(list):
     """prints the list, but sorted"""
-    def __init__(self):
-        pass
 
     def print_sorted(self):
         print(sorted(self))
