@@ -18,3 +18,7 @@ test where disance is negativ
 >>> bg.integer_validator("distance", -4)
 Traceback (most recent call last):
 ValueError: distance must be greater than 0
+
+test where name is greater than 0
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 20)
