@@ -62,7 +62,7 @@ Test case wher elist have just 1 number
 >>> my_list.append(1)
 >>> print(my_list)
 [1]
->>> my_list.print_sorted([1])
+>>> my_list.print_sorted()
 [1]
 >>> print(my_list)
 [1]
