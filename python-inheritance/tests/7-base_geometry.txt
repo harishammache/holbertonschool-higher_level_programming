@@ -2,6 +2,13 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg = BaseGeometry()
 
+
+>>> try:
+...    bg.area()
+... except Exception as e:
+...    print(e)
+area() is not implemented
+
 with positive integer
 >>> bg.integer_validator("my_int", 12)
 
@@ -41,4 +48,3 @@ ValueError: Name must be greater than 0
 >>> bg.integer_validator("distance", -4)
 Traceback (most recent call last):
 ValueError: distance must be greater than 0
-
