@@ -9,6 +9,12 @@
 ...    print(e)
 area() is not implemented
 
+>>> try:
+...    bg.area(2)
+... except Exception as e:
+...    print(e)
+area() takes 1 positional argument but 2 were given
+
 with positive integer
 >>> bg.integer_validator("my_int", 12)
 
