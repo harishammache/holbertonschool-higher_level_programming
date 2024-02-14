@@ -56,7 +56,7 @@ class Square(Rectangle):
         """
             Return the square description.
         """
-        return f"[Rectangle] {self.__size}/{self.__size}"
+        return f"[Square] {self.__size}/{self.__size}"
 
     def area(self):
         """
