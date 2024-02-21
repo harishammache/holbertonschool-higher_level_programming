@@ -16,3 +16,11 @@ class Square(Rectangle):
         """The overloading __str__ method """
         return "[Square] ({}) {}/{} - {}"\
             .format(self.id, self.x, self.y, self.size)
+
+    @property
+    def size(self):
+        return self.size
+
+    @size.setter
+    def size(self, value):
+        self.size = value
