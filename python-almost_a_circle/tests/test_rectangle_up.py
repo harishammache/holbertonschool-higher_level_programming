@@ -34,8 +34,8 @@ class TestId(unittest.TestCase):
         instance.update(width=1, x=2)
         self.assertEqual(instance.id, 1)
         self.assertEqual(instance.width, 1)
-        self.assertEqual(instance.height, 2)
-        self.assertEqual(instance.x, 10)
+        self.assertEqual(instance.height, 10)
+        self.assertEqual(instance.x, 2)
         self.assertEqual(instance.y, 10)
 
     def test_Id3(self):
