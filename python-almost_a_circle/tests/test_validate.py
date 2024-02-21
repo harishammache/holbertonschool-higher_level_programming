@@ -27,3 +27,7 @@ class TestId(unittest.TestCase):
         """test with y is negativ"""
         with self.assertRaises(ValueError):
             instance = Rectangle(10, 2, 2, -8)
+
+
+if __name__ == '__main__':
+    unittest.main()

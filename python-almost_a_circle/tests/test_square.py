@@ -49,3 +49,7 @@ class TestId(unittest.TestCase):
         s3 = Square(3, 1, 3)
         expected_output = "\n\n ###\n ###\n ###\n"
         self.assertEqual(s3.display(), expected_output)
+
+
+if __name__ == '__main__':
+    unittest.main()
