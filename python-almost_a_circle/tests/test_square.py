@@ -3,7 +3,6 @@
     Unittest for file square.py
 """
 import unittest
-from models.rectangle import Rectangle
 from models.base import Base
 from models.square import Square
 
@@ -31,24 +30,6 @@ class TestId(unittest.TestCase):
         s1 = Square(3, 1, 3)
         self.assertEqual(str(s1), "[Square] (1) 1/3 - 3")
         self.assertEqual(s1.area(), 9)
-
-    def square_display(self):
-        """test with the function display"""
-        s1 = Square(5)
-        expected_output = "#####\n#####\n#####\n#####\n#####\n"
-        self.assertEqual(s1.display(), expected_output)
-
-    def square_display_x(self):
-        """test with x and size"""
-        s2 = Square(2, 2)
-        expected_output = "  ##\n  ##\n"
-        self.assertEqual(s2.display(), expected_output)
-
-    def square_display_x_y(self):
-        """test with x , y and size"""
-        s3 = Square(3, 1, 3)
-        expected_output = "\n\n ###\n ###\n ###\n"
-        self.assertEqual(s3.display(), expected_output)
 
 
 if __name__ == '__main__':
