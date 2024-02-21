@@ -18,9 +18,9 @@ class Square(Rectangle):
             .format(self.id, self.x, self.y, self.size)
 
     @property
-    def size(self):
-        return self.size
+    def width(self):
+        return self.width
 
-    @size.setter
-    def size(self, value):
-        self.size = value
+    @width.setter
+    def width(self, value):
+        self.width = value
