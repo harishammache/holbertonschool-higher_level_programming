@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import json
 """Write the first class"""
+import json
 
 
 class Base:
