@@ -10,7 +10,9 @@ from unittest.mock import patch
 
 
 class TestRectangleDisplay(unittest.TestCase):
+    """all test"""
     def test_rectangle_display(self):
+        """test rectangle display"""
         r1 = Rectangle(4, 6)
         expected_output = "####\n####\n####\n####\n####\n####\n"
         with patch('sys.stdout', new=io.StringIO()) as fake_stdout:

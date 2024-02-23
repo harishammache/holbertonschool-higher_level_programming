@@ -6,6 +6,7 @@ from unittest.mock import patch
 
 
 class TestRectangleDisplay(unittest.TestCase):
+    """all test"""
     def test_rectangle_display(self):
         """test rectangle display"""
         r1 = Rectangle(2, 3, 2, 2)
