@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """Write the first class"""
 import json
-from models.square import Square
-from models.rectangle import Rectangle
 
 
 class Base:
@@ -47,9 +45,9 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """class methode"""
-        if cls.__name__ == Rectangle:
+        if cls.__name__ == "Rectangle":
             dummy = cls(1, 1)
-        if cls.__name__ == Square:
+        if cls.__name__ == "Square":
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
