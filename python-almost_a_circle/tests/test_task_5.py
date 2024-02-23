@@ -8,6 +8,7 @@ import sys
 from models.rectangle import Rectangle
 from unittest.mock import patch
 
+
 class TestRectangleDisplay(unittest.TestCase):
     def test_rectangle_display(self):
         r1 = Rectangle(4, 6)
@@ -21,6 +22,7 @@ class TestRectangleDisplay(unittest.TestCase):
         with patch('sys.stdout', new=io.StringIO()) as fake_stdout:
             r2.display()
             self.assertEqual(fake_stdout.getvalue(), expected_output)
+
 
 if __name__ == '__main__':
     unittest.main()
