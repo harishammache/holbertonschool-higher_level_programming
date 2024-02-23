@@ -21,8 +21,16 @@ class TestId(unittest.TestCase):
         ]
         json_list_input = Rectangle.to_json_string(list_input)
         list_output = Rectangle.from_json_string(json_list_input)
-        self.assertEqual(type(list_input), type(list_output))
-        self.assertEqual(list_input, list_output)
+        self.assertEqual(type(list_input), type(list()))
+        self.assertEqual(list_input, [{'height': 4, 'width': 10, 'id': 89},
+                                      {'height': 7, 'width': 1, 'id': 7}])
+        self.assertEqual(type(json_list_input), type(str()))
+        self.assertEqual(json_list_input,
+                         [{"height": 4, "width": 10, "id": 89},
+                          {"height": 7, "width": 1, "id": 7}])
+        self.assertEqual(type(list_output), type(list()))
+        self.assertEqual(list_output, [{'height': 4, 'width': 10, 'id': 89},
+                                       {'height': 7, 'width': 1, 'id': 7}])
 
 
 if __name__ == "__main__":
