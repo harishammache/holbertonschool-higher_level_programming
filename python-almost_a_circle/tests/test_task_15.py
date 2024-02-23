@@ -25,3 +25,7 @@ class TestId(unittest.TestCase):
                          '[{"id": 1, "width": 10,\
  "height": 7, "x": 2, "y": 8}]')
         self.assertEqual(type(json_dictionary), type(str()))
+
+
+if __name__ == '__main__':
+    unittest.main()
