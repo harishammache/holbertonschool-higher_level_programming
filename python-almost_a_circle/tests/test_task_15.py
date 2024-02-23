@@ -23,5 +23,5 @@ class TestId(unittest.TestCase):
         self.assertEqual(type(dictionary), type(dict()))
         self.assertEqual(json_dictionary,
                          '[{"id": 1, "width": 10,\
-                           "height": 7, "x": 2, "y": 8}]')
+ "height": 7, "x": 2, "y": 8}]')
         self.assertEqual(type(json_dictionary), type(str()))
