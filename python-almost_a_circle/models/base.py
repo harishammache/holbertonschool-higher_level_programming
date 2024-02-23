@@ -27,7 +27,7 @@ class Base:
     def save_to_file(cls, list_objs):
         """class method"""
         if list_objs is None:
-            list_objs = '[]'
+            list_objs = []
         filename = cls.__name__ + ".json"
         with open(filename, "w") as file:
             dict_list = []
