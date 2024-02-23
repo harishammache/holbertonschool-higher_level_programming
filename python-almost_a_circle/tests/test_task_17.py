@@ -26,8 +26,8 @@ class TestId(unittest.TestCase):
                                       {'height': 7, 'width': 1, 'id': 7}])
         self.assertEqual(type(json_list_input), type(str()))
         self.assertEqual(json_list_input,
-                         [{"height": 4, "width": 10, "id": 89},
-                          {"height": 7, "width": 1, "id": 7}])
+                         '[{"id": 89, "width": 10, "height": 4},\
+ {"id": 7, "width": 1, "height": 7}]')
         self.assertEqual(type(list_output), type(list()))
         self.assertEqual(list_output, [{'height': 4, 'width': 10, 'id': 89},
                                        {'height': 7, 'width': 1, 'id': 7}])
