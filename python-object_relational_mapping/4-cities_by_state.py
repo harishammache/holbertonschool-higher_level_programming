@@ -3,13 +3,13 @@
 import MySQLdb
 from sys import argv
 
-if __name__=="__main__":
+if __name__ == "__main__":
     username = argv[1]
     password = argv[2]
     data = argv[3]
     connection = MySQLdb.connect(host="localhost", port=3306,
                                  user=username, passwd=password, db=data)
-    cursor= connection.cursor()
+    cursor = connection.cursor()
     cursor.execute("SELECT cities.id, cities.name, states.name FROM cities\
                    JOIN states ON cities.state_id = states.id\
                    ORDER BY cities.id ASC")
