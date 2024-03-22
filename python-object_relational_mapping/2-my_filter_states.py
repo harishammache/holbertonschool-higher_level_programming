@@ -5,6 +5,7 @@ takes in an argument and displays all values in the states table
 """
 import MySQLdb
 from sys import argv
+
 if __name__ == "__main__":
     username = argv[1]
     password = argv[2]
