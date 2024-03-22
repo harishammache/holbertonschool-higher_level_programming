@@ -13,6 +13,7 @@ if __name__ == "__main__":
                    ORDER BY id ASC")
     stats = cursor.fetchall()
     for stat in stats:
-        print(stat)
+        if stat[1].startswith("N"):
+            print(stat)
     cursor.close()
     connection.close()
