@@ -9,7 +9,7 @@ if __name__ == "__main__":
                                  user=sys.argv[1], passw=sys.argv[2],
                                  data=sys.argv[3])
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
     stats = cursor.fetchall()
     for stat in stats:
         print(stat)
