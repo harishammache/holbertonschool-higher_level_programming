@@ -18,8 +18,11 @@ if __name__ == "__main__":
                 cities.state_id=states.id WHERE states.name = %s\
                     ORDER BY cities.id ASC", (state_name,))
     states = cursor.fetchall()
-    for state in states:
-        print('{}, '.format(state[0]), end="")
+    for index, state in enumerate(states):
+        if index < len(states) - 1:
+            print('{}, '.format(state[0]), end="")
+        else:
+            print('{}'.format(state[0]), end="")
     print()
     cursor.close()
     connection.close()
