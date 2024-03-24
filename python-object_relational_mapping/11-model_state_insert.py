@@ -9,7 +9,7 @@ if __name__ == "__main__":
     username = argv[1]
     password = argv[2]
     data = argv[3]
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.
                            format(username, password, data),
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
