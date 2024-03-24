@@ -6,9 +6,9 @@ from sqlalchemy.orm import sessionmaker
 from model_state import State
 
 if __name__ == "__main__":
-    username = argv[0]
-    password = argv[1]
-    data = argv[2]
+    username = argv[1]
+    password = argv[2]
+    data = argv[3]
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                            .format(username, password, data),
                            pool_pre_ping=True)
@@ -17,3 +17,4 @@ if __name__ == "__main__":
     states = session.query(State).order_by(State.id)
     for state in states:
         print("{}: {}".format(state.id, state.name))
+    session.close()
