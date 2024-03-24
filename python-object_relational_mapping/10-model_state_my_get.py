@@ -10,12 +10,12 @@ if __name__ == "__main__":
     password = argv[2]
     data = argv[3]
     state_name = argv[4]
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
-                           .format(username, password, data),
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.
+                           format(username, password, data),
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    states = session.query(State).order_by(State.name == state_name).first()
+    states = session.query(State).filter(State.name == state_name).first()
 
     if states is not None:
         print(states.id)
